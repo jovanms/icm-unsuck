@@ -1,0 +1,30 @@
+{
+    "name": "IcM unSuck",
+    "version": "0.1",
+    "description": "make IcM suck less",
+    "content_scripts": [
+      {
+        "matches": [
+          "https://icm.ad.msft.net/imp/v3/incidents/details/*",
+          "https://portal.microsofticm.com/imp/v3/incidents/details/*"
+        ],
+        "js": ["icm-unsuck.js"]
+      }
+    ],
+    "page_action": {
+      "default_icon": {
+            "16": "icm-unsuck-16.png",
+            "32": "icm-unsuck-32.png",
+            "48": "icm-unsuck-48.png",
+            "128": "icm-unsuck-128.png"
+        },
+        "default_title": "IcM unSuck"
+    },
+    "icons": {
+      "16": "icm-unsuck-16.png",
+      "32": "icm-unsuck-32.png",
+      "48": "icm-unsuck-48.png",
+      "128": "icm-unsuck-128.png"
+    },
+    "manifest_version": 2
+}
